@@ -1,26 +1,170 @@
 @import "tailwindcss";
+@config "../../tailwind.config.ts";
 
+/* Custom CSS variables for brand colors */
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --color-primary: #1e3a5f;
+  --color-primary-light: #2a4a73;
+  --color-primary-dark: #152a45;
+  --color-accent: #ff6b35;
+  --color-accent-light: #ff8a5c;
+  --color-accent-dark: #e55a2a;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+/* Selection color */
+::selection {
+  background-color: var(--color-accent);
+  color: white;
+}
+
+/* Focus visible for accessibility */
+:focus-visible {
+  outline: 2px solid var(--color-accent);
+  outline-offset: 2px;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f5f9;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-primary);
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-primary-dark);
+}
+
+/* Gradient text */
+.gradient-text {
+  background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-accent) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Button styles */
+.btn-primary {
+  background-color: var(--color-accent);
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  transition: all 0.3s;
+}
+
+.btn-primary:hover {
+  background-color: var(--color-accent-dark);
+  transform: scale(1.05);
+  box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1);
+}
+
+.btn-primary:active {
+  transform: scale(0.95);
+}
+
+.btn-secondary {
+  background-color: var(--color-primary);
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  transition: all 0.3s;
+}
+
+.btn-secondary:hover {
+  background-color: var(--color-primary-dark);
+  transform: scale(1.05);
+}
+
+/* Card hover effect */
+.card-hover {
+  transition: all 0.3s;
+}
+
+.card-hover:hover {
+  box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1);
+  transform: translateY(-4px);
+}
+
+/* Section padding */
+.section-padding {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+@media (min-width: 768px) {
+  .section-padding {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+/* Container */
+.container-custom {
+  max-width: 80rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+@media (min-width: 640px) {
+  .container-custom {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container-custom {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+
+/* Animations */
+@keyframes slideDown {
+  from {
+    height: 0;
+    opacity: 0;
+  }
+  to {
+    height: var(--radix-accordion-content-height);
+    opacity: 1;
+  }
+}
+
+@keyframes slideUp {
+  from {
+    height: var(--radix-accordion-content-height);
+    opacity: 1;
+  }
+  to {
+    height: 0;
+    opacity: 0;
+  }
+}
+
+[data-state="open"] > .accordion-content {
+  animation: slideDown 300ms ease-out;
+}
+
+[data-state="closed"] > .accordion-content {
+  animation: slideUp 300ms ease-out;
 }
