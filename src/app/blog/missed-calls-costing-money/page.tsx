@@ -1,7 +1,7 @@
 import { Metadata } from "next";
 import Link from "next/link";
 import Image from "next/image";
-import { ArrowLeft, Calendar, Clock, User } from "lucide-react";
+import { ArrowLeft, Calendar, Clock } from "lucide-react";
 
 export const metadata: Metadata = {
   title: "5 Signs Your Business is Losing Money from Missed Calls | Advisync",
@@ -12,9 +12,18 @@ export const metadata: Metadata = {
 export default function BlogPost() {
   return (
     <main className="pt-20">
-      {/* Hero */}
-      <section className="section-padding bg-gradient-to-br from-primary-500 to-primary-600 text-white">
-        <div className="container-custom">
+      {/* Hero with Image */}
+      <section className="relative bg-gradient-to-br from-primary-500 to-primary-600 text-white">
+        <div className="absolute inset-0 opacity-20">
+          <Image
+            src="/blog/missed-calls.webp"
+            alt="Business owner missing phone call"
+            fill
+            className="object-cover"
+            priority
+          />
+        </div>
+        <div className="relative container-custom section-padding">
           <Link
             href="/blog"
             className="inline-flex items-center space-x-2 text-white/80 hover:text-white mb-6"
@@ -45,15 +54,6 @@ export default function BlogPost() {
       <section className="section-padding">
         <div className="container-custom">
           <div className="max-w-3xl mx-auto">
-            <div className="relative h-64 md:h-96 rounded-2xl overflow-hidden mb-8 bg-gradient-to-br from-primary-100 to-accent-100">
-              <Image
-                src="/blog/missed-calls.webp"
-                alt="Business owner missing phone call"
-                fill
-                className="object-cover"
-              />
-            </div>
-
             <div className="prose prose-lg max-w-none">
               <p className="text-xl text-gray-600 mb-8">
                 Every missed call is a missed opportunity. But how do you know if missed calls are
