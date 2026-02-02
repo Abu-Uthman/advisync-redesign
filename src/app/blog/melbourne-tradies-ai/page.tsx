@@ -34,9 +34,17 @@ export default function BlogPost() {
                 <span>6 min read</span>
               </span>
             </div>
-            <h1 className="text-4xl md:text-5xl font-bold">
+            <h1 className="text-4xl md:text-5xl font-bold mb-6">
               How Melbourne Tradies Are Using AI to Book More Jobs
             </h1>
+         <div className="relative h-64 md:h-96 rounded-2xl overflow-hidden mb-8">
+              <Image
+                src="/blog/tradies.webp"
+                alt="Melbourne tradies using AI scheduling"
+                fill
+                className="object-cover"
+              />
+            </div>
           </div>
         </div>
       </section>
@@ -45,7 +53,12 @@ export default function BlogPost() {
       <section className="section-padding">
         <div className="container-custom">
           <div className="max-w-3xl mx-auto">
-            <div className="relative h-64 md:h-96 rounded-2xl overflow-hidden mb-8 bg-gradient-to-br from-primary-100 to-accent-100">
+            <div className="prose prose-lg max-w-none">
+              <p className="text-xl text-gray-600 mb-8">
+                Melbourne&apos;s tradies are some of the busiest people in Australia. Between jobs,
+                driving across the city, and managing paperwork, answering every phone call is
+                nearly impossible. Here&apos;s how three local tradies solved this problem with AI.
+              </p>
               <Image
                 src="/blog/tradies.webp"
                 alt="Melbourne tradie using AI scheduling"
