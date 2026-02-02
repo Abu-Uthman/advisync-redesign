@@ -16,7 +16,7 @@ const posts = [
     date: "January 28, 2026",
     category: "Business Growth",
     slug: "missed-calls-costing-money",
-    image: "/blog/missed-calls.jpg",
+    image: "/blog/missed-calls.webp",
   },
   {
     title: "AI Voice Agents vs Virtual Receptionists: Which is Right for You?",
@@ -25,7 +25,7 @@ const posts = [
     date: "January 21, 2026",
     category: "AI Technology",
     slug: "ai-voice-agents-vs-virtual-receptionists",
-    image: "/blog/comparison.jpg",
+    image: "/blog/comparison.webp",
   },
   {
     title: "How Melbourne Tradies Are Using AI to Book More Jobs",
@@ -34,7 +34,7 @@ const posts = [
     date: "January 14, 2026",
     category: "Case Studies",
     slug: "melbourne-tradies-ai",
-    image: "/blog/tradies.jpg",
+    image: "/blog/tradies.webp",
   },
   {
     title: "The Complete Guide to AI Automation for Small Business",
@@ -89,7 +89,7 @@ export default function BlogPage() {
                 key={post.slug}
                 className="bg-white border border-gray-100 rounded-2xl overflow-hidden hover:shadow-lg transition-shadow"
               >
-                <div className="h-48 bg-gradient-to-br from-primary-100 to-accent-100" />
+                <Image src={post.image} alt={post.title} width={400} height={192} className="w-full h-48 object-cover" />
                 <div className="p-6">
                   <div className="flex items-center space-x-4 text-sm text-gray-500 mb-3">
                     <span className="bg-accent-100 text-accent-600 px-2 py-1 rounded">
