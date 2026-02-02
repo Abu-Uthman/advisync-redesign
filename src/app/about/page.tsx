@@ -93,8 +93,8 @@ export default function AboutPage() {
                   <div className="text-gray-600">AI Availability</div>
                 </div>
                 <div className="text-center">
-                  <div className="text-4xl font-bold text-accent-500">Melbourne</div>
-                  <div className="text-gray-600">Based</div>
+                  <div className="text-4xl font-bold text-accent-500">🇦🇺</div>
+                  <div className="text-gray-600">Melbourne Based</div>
                 </div>
               </div>
             </div>
