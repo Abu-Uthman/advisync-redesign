@@ -26,7 +26,7 @@ const posts = [
     date: "January 21, 2026",
     category: "AI Technology",
     slug: "ai-voice-agents-vs-virtual-receptionists",
-    image: "/blog/tradies.webp",
+    image: "/blog/comparison.webp",
   },
   {
     title: "How Melbourne Tradies Are Using AI to Book More Jobs",
@@ -44,7 +44,7 @@ const posts = [
     date: "January 7, 2026",
     category: "Guides",
     slug: "ai-automation-guide",
-    image: "/blog/missed-calls.webp",
+    image: "/blog/automation.webp",
   },
   {
     title: "Why 2026 is the Year to Adopt AI for Your Business",
@@ -53,7 +53,7 @@ const posts = [
     date: "December 30, 2025",
     category: "Industry Trends",
     slug: "2026-year-of-ai",
-    image: "/blog/tradies.webp",
+    image: "/blog/2026-ai.webp",
   },
   {
     title: "Setting Up Your First AI Voice Agent: A Step-by-Step Guide",
@@ -62,7 +62,7 @@ const posts = [
     date: "December 23, 2025",
     category: "Guides",
     slug: "first-ai-voice-agent-setup",
-    image: "/blog/missed-calls.webp",
+    image: "/blog/setup-guide.webp",
   },
 ];
 
