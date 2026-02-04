@@ -37,10 +37,10 @@ export function HeroSection() {
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 mb-8">
-              <Link href="/contact" className="btn-primary flex items-center justify-center space-x-2">
+              <a href="https://calendly.com/advisync-info/ai-automation-consultation" target="_blank" rel="noopener noreferrer" className="btn-primary flex items-center justify-center space-x-2">
                 <span>Book Free Consultation</span>
                 <ArrowRight className="w-5 h-5" />
-              </Link>
+              </a>
               <Link href="/pricing" className="flex items-center justify-center space-x-2 px-6 py-3 border-2 border-primary-500 text-primary-500 rounded-lg font-semibold hover:bg-primary-50 transition-colors">
                 <span>View Pricing</span>
                 <ArrowRight className="w-5 h-5" />

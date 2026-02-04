@@ -93,9 +93,9 @@ export function Header() {
 
           {/* CTA Button */}
           <div className="hidden md:flex items-center space-x-4">
-            <Link href="/contact" className="btn-primary">
+            <a href="https://calendly.com/advisync-info/ai-automation-consultation" target="_blank" rel="noopener noreferrer" className="btn-primary">
               Book Free Consultation
-            </Link>
+            </a>
           </div>
 
           {/* Mobile Menu Button */}
@@ -162,9 +162,9 @@ export function Header() {
                   )
                 )}
                 <div className="px-4 pt-4">
-                  <Link href="/contact" className="btn-primary w-full block text-center">
+                  <a href="https://calendly.com/advisync-info/ai-automation-consultation" target="_blank" rel="noopener noreferrer" className="btn-primary w-full block text-center">
                     Book Free Consultation
-                  </Link>
+                  </a>
                 </div>
               </div>
             </motion.div>

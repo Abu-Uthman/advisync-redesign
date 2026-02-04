@@ -29,13 +29,15 @@ export function CTASection() {
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
-            <Link
-              href="/contact"
+            <a
+              href="https://calendly.com/advisync-info/ai-automation-consultation"
+              target="_blank"
+              rel="noopener noreferrer"
               className="inline-flex items-center justify-center space-x-2 bg-accent-500 text-white px-8 py-4 rounded-lg font-semibold hover:bg-accent-600 transition-all hover:scale-105 hover:shadow-lg"
             >
               <span>Book Free Consultation</span>
               <ArrowRight className="w-5 h-5" />
-            </Link>
+            </a>
             <a
               href="tel:0432405388"
               className="inline-flex items-center justify-center space-x-2 bg-white/10 backdrop-blur text-white px-8 py-4 rounded-lg font-semibold hover:bg-white/20 transition-all border border-white/20"
