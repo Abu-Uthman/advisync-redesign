@@ -1,8 +1,9 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { motion } from "framer-motion";
-import { ArrowRight, Play, Phone, Zap, Bot } from "lucide-react";
+import { ArrowRight, Phone, Zap, Bot } from "lucide-react";
 
 export function HeroSection() {
   return (
@@ -40,10 +41,10 @@ export function HeroSection() {
                 <span>Book Free Consultation</span>
                 <ArrowRight className="w-5 h-5" />
               </Link>
-              <button className="flex items-center justify-center space-x-2 px-6 py-3 border-2 border-primary-500 text-primary-500 rounded-lg font-semibold hover:bg-primary-50 transition-colors">
-                <Play className="w-5 h-5" />
-                <span>Watch Demo</span>
-              </button>
+              <Link href="/pricing" className="flex items-center justify-center space-x-2 px-6 py-3 border-2 border-primary-500 text-primary-500 rounded-lg font-semibold hover:bg-primary-50 transition-colors">
+                <span>View Pricing</span>
+                <ArrowRight className="w-5 h-5" />
+              </Link>
             </div>
 
             {/* Stats */}
@@ -70,7 +71,16 @@ export function HeroSection() {
             transition={{ duration: 0.6, delay: 0.2 }}
             className="relative"
           >
-            <div className="relative bg-gradient-to-br from-primary-500 to-primary-600 rounded-3xl p-8 shadow-2xl">
+            {/* Hero Image */}
+            <div className="absolute inset-0 -z-10 opacity-20">
+              <Image
+                src="/hero-main.webp"
+                alt="AI Voice Agent"
+                fill
+                className="object-cover rounded-3xl"
+              />
+            </div>
+            <div className="relative bg-gradient-to-br from-primary-500/95 to-primary-600/95 rounded-3xl p-8 shadow-2xl">
               {/* Floating elements */}
               <motion.div
                 animate={{ y: [0, -10, 0] }}

@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { Phone, Mail, MapPin } from "lucide-react";
 
 const footerLinks = {
@@ -33,9 +34,13 @@ export function Footer() {
           {/* Brand */}
           <div className="lg:col-span-2">
             <Link href="/" className="flex items-center space-x-2 mb-4">
-              <div className="w-10 h-10 bg-white rounded-lg flex items-center justify-center">
-                <span className="text-primary-500 font-bold text-xl">A</span>
-              </div>
+              <Image 
+                src="/logo-icon.svg" 
+                alt="Advisync" 
+                width={40} 
+                height={40}
+                className="w-10 h-10 bg-white rounded-lg p-1"
+              />
               <span className="text-xl font-bold">Advisync</span>
             </Link>
             <p className="text-gray-300 mb-6 max-w-sm">
