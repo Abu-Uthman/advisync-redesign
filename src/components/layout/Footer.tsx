@@ -44,7 +44,7 @@ export function Footer() {
             <div className="space-y-3">
               <a href="tel:+61400000000" className="flex items-center space-x-3 text-gray-300 hover:text-accent-500 transition-colors">
                 <Phone className="w-5 h-5" />
-                <span>1300 ADVISYNC</span>
+                <span>0432 405 388</span>
               </a>
               <a href="mailto:hello@advisync.com.au" className="flex items-center space-x-3 text-gray-300 hover:text-accent-500 transition-colors">
                 <Mail className="w-5 h-5" />

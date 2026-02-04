@@ -81,7 +81,7 @@ export default function AIVoiceAgentsPage() {
                   href="/contact"
                   className="inline-flex items-center space-x-2 bg-white/10 text-white px-6 py-3 rounded-lg font-semibold hover:bg-white/20 transition-colors"
                 >
-                  <span>Book a Demo</span>
+                  <span>Free Consultation</span>
                 </Link>
               </div>
             </div>
@@ -201,7 +201,7 @@ export default function AIVoiceAgentsPage() {
           </h2>
           <p className="text-gray-600 mb-8 max-w-2xl mx-auto">
             Book a free consultation and see how an AI voice agent can work for your business.
-            We'll even give you a live demo with your actual business scenario.
+            We'll walk you through exactly how it would handle your specific calls.
           </p>
           <Link
             href="/contact"

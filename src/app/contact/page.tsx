@@ -178,8 +178,8 @@ export default function ContactPage() {
                     </div>
                     <div>
                       <h3 className="font-semibold text-primary-500">Phone</h3>
-                      <a href="tel:1300ADVISYNC" className="text-gray-600 hover:text-accent-500">
-                        1300 ADVISYNC
+                      <a href="tel:0432405388" className="text-gray-600 hover:text-accent-500">
+                        0432 405 388
                       </a>
                     </div>
                   </div>

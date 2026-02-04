@@ -38,7 +38,7 @@ export default function Home() {
             },
             contactPoint: {
               "@type": "ContactPoint",
-              telephone: "+61-1300-ADVISYNC",
+              telephone: "+61432405388",
               contactType: "customer service",
               availableLanguage: "English",
             },

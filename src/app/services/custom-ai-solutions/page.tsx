@@ -61,7 +61,7 @@ const process = [
   {
     step: "03",
     title: "Development",
-    description: "We build your solution with regular updates and demos along the way.",
+    description: "We build your solution with regular progress updates along the way.",
   },
   {
     step: "04",

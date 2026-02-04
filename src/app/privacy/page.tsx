@@ -71,7 +71,7 @@ export default function PrivacyPage() {
             </p>
             <p className="text-gray-600">
               Email: privacy@advisync.com.au<br />
-              Phone: 1300 ADVISYNC<br />
+              Phone: 0432 405 388<br />
               Address: Melbourne, Victoria, Australia
             </p>
           </div>
