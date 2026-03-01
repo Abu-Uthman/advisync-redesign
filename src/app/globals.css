@@ -2,6 +2,10 @@
 @config "../../tailwind.config.ts";
 
 /* Custom CSS variables for brand colors */
+html, body {
+  overflow-x: hidden;
+}
+
 :root {
   --color-primary: #1e3a5f;
   --color-primary-light: #2a4a73;
