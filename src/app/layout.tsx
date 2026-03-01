@@ -12,11 +12,11 @@ const manrope = Manrope({
 export const metadata: Metadata = {
   metadataBase: new URL("https://advisync.com.au"),
   title: {
-    default: "AI Voice Agents & Business Automation Melbourne | Advisync",
+    default: "AI Voice Agents for Melbourne Law Firms, NDIS & Service Businesses | Advisync",
     template: "%s | Advisync AI Solutions",
   },
   description:
-    "Advisync builds AI voice agents and custom business automation for Australian businesses. Never miss a call — our AI answers 24/7, books appointments, and captures leads. Melbourne-based.",
+    "Secure, compliant AI receptionists and automation built for Australian law firms, NDIS providers, and local service businesses. 24/7 call answering with natural Australian accents. Melbourne-based.",
   keywords: [
     "AI voice agents Melbourne",
     "AI voice agents Australia",
@@ -27,6 +27,10 @@ export const metadata: Metadata = {
     "AI receptionist Australia",
     "workflow automation",
     "AI for tradies",
+    "AI receptionist law firms Australia",
+    "NDIS provider automation",
+    "AI receptionist Melbourne",
+    "legal AI receptionist",
     "AI for small business Australia",
   ],
   authors: [{ name: "Advisync" }],
@@ -42,9 +46,9 @@ export const metadata: Metadata = {
     locale: "en_AU",
     url: "https://advisync.com.au",
     siteName: "Advisync AI Solutions",
-    title: "AI Voice Agents & Business Automation Melbourne | Advisync",
+    title: "AI Voice Agents for Law Firms, NDIS & Service Businesses | Advisync Melbourne",
     description:
-      "AI voice agents that answer calls 24/7, book appointments, and capture leads. Custom automation solutions for Australian businesses.",
+      "Secure AI receptionists for Australian law firms, NDIS providers, and service businesses. 24/7 call answering with natural Australian accents.",
     images: [
       {
         url: "/og-image.png",
@@ -56,9 +60,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "AI Voice Agents & Business Automation | Advisync Melbourne",
+    title: "AI Voice Agents for Law Firms & NDIS Providers | Advisync Melbourne",
     description:
-      "Never miss a call. AI voice agents and workflow automation for Australian businesses.",
+      "Secure AI receptionists for Australian law firms, NDIS providers, and local businesses. Melbourne-based.",
     images: ["/og-image.png"],
   },
   robots: {

@@ -1,5 +1,6 @@
 import { HeroSection } from "@/components/sections/HeroSection";
 import { TrustedBySection } from "@/components/sections/TrustedBySection";
+import { TrustSection } from "@/components/sections/TrustSection";
 import { ServicesSection } from "@/components/sections/ServicesSection";
 import { HowItWorksSection } from "@/components/sections/HowItWorksSection";
 import { PricingSection } from "@/components/sections/PricingSection";
@@ -12,6 +13,7 @@ export default function Home() {
     <>
       <HeroSection />
       <TrustedBySection />
+      <TrustSection />
       <ServicesSection />
       <HowItWorksSection />
       <PricingSection />
@@ -19,7 +21,7 @@ export default function Home() {
       <FAQSection />
       <CTASection />
 
-      {/* Organization Schema */}
+      {/* LocalBusiness Schema */}
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
@@ -32,13 +34,25 @@ export default function Home() {
             logo: "https://advisync.com.au/logo.svg",
             image: "https://advisync.com.au/logo.svg",
             description:
-              "Advisync provides AI voice agents, workflow automation, and custom AI solutions for Australian businesses. Never miss a customer call again with 24/7 AI-powered voice agents.",
+              "Advisync builds secure, compliant AI voice agents and business automation for Australian law firms, NDIS providers, and local service businesses. 24/7 AI receptionists with natural Australian accents, onshore data processing, and enterprise-grade security.",
             telephone: "+61432405388",
             email: "info@advisync.com.au",
+            knowsAbout: [
+              "AI Voice Agents",
+              "AI Receptionists for Law Firms",
+              "Legal Tech Automation",
+              "NDIS Business Automation",
+              "NDIS Provider AI Solutions",
+              "Business Workflow Automation",
+              "Australian AI Compliance",
+              "Conversational AI",
+              "After-Hours Call Handling",
+            ],
             address: {
               "@type": "PostalAddress",
               addressLocality: "Melbourne",
               addressRegion: "VIC",
+              postalCode: "3000",
               addressCountry: "AU",
             },
             geo: {
@@ -56,13 +70,17 @@ export default function Home() {
             priceRange: "$$",
             openingHoursSpecification: {
               "@type": "OpeningHoursSpecification",
-              dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+              dayOfWeek: [
+                "Monday",
+                "Tuesday",
+                "Wednesday",
+                "Thursday",
+                "Friday",
+              ],
               opens: "09:00",
               closes: "17:00",
             },
-            sameAs: [
-              "https://linkedin.com/company/advisync",
-            ],
+            sameAs: ["https://linkedin.com/company/advisync"],
             contactPoint: {
               "@type": "ContactPoint",
               telephone: "+61432405388",
@@ -71,60 +89,42 @@ export default function Home() {
               availableLanguage: "English",
               areaServed: "AU",
             },
-          }),
-        }}
-      />
-
-      {/* Service Schema — AI Voice Agents */}
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "Service",
-            name: "AI Voice Agents",
-            description:
-              "24/7 AI-powered voice agents that answer calls, handle enquiries, book appointments, and capture leads for Australian businesses.",
-            provider: { "@id": "https://advisync.com.au/#business" },
-            serviceType: "AI Voice Agent",
-            areaServed: { "@type": "Country", name: "Australia" },
-            url: "https://advisync.com.au/services/ai-voice-agents",
-          }),
-        }}
-      />
-
-      {/* Service Schema — AI Automations */}
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "Service",
-            name: "Business Automation Solutions",
-            description:
-              "Intelligent workflow automation that connects your apps, reduces manual tasks, and scales your operations with AI-powered triggers and integrations.",
-            provider: { "@id": "https://advisync.com.au/#business" },
-            serviceType: "Business Automation",
-            areaServed: { "@type": "Country", name: "Australia" },
-            url: "https://advisync.com.au/services/ai-automations",
-          }),
-        }}
-      />
-
-      {/* Service Schema — Custom AI Solutions */}
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "Service",
-            name: "Custom AI Solutions",
-            description:
-              "Bespoke AI systems tailored to your business — chatbots, data analysis, API integrations, and custom AI development for Melbourne and Australian businesses.",
-            provider: { "@id": "https://advisync.com.au/#business" },
-            serviceType: "Custom AI Development",
-            areaServed: { "@type": "Country", name: "Australia" },
-            url: "https://advisync.com.au/services/custom-ai-solutions",
+            hasOfferCatalog: {
+              "@type": "OfferCatalog",
+              name: "AI Solutions",
+              itemListElement: [
+                {
+                  "@type": "Offer",
+                  itemOffered: {
+                    "@type": "Service",
+                    name: "AI Voice Agents for Law Firms",
+                    description:
+                      "24/7 AI receptionist for legal practices — client intake, appointment scheduling, after-hours triage with Australian compliance.",
+                    url: "https://advisync.com.au/services/ai-voice-agents",
+                  },
+                },
+                {
+                  "@type": "Offer",
+                  itemOffered: {
+                    "@type": "Service",
+                    name: "AI Automation for NDIS Providers",
+                    description:
+                      "Automate participant enquiries, intake, scheduling, and plan coordination calls for NDIS service providers.",
+                    url: "https://advisync.com.au/services/ai-automations",
+                  },
+                },
+                {
+                  "@type": "Offer",
+                  itemOffered: {
+                    "@type": "Service",
+                    name: "AI Receptionists for Local Service Businesses",
+                    description:
+                      "Never miss a lead. AI voice agents for tradies, dental clinics, real estate, and professional services across Australia.",
+                    url: "https://advisync.com.au/services/custom-ai-solutions",
+                  },
+                },
+              ],
+            },
           }),
         }}
       />

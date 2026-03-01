@@ -28,12 +28,12 @@ export function HeroSection() {
             </div>
 
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-primary-500 leading-tight mb-6">
-              Transform Your Business with{" "}
-              <span className="gradient-text">AI</span>
+              AI Voice Agents for Australian{" "}
+              <span className="gradient-text">Businesses</span>
             </h1>
 
             <p className="text-lg md:text-xl text-gray-600 mb-8 max-w-lg">
-              Never miss another customer call. Our AI voice agents, automations, and custom solutions help Australian businesses grow 24/7.
+              Secure, compliant AI receptionists for law firms, NDIS providers, and local service businesses. Never miss a client call — our AI answers 24/7 with natural Australian accents.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 mb-8">
