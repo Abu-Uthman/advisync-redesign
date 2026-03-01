@@ -16,7 +16,7 @@ export async function POST(req: NextRequest) {
 
     // Send notification to Advisync
     await resend.emails.send({
-      from: "Advisync Contact Form <onboarding@resend.dev>",
+      from: "Advisync <info@advisync.com.au>",
       to: "info@advisync.com.au",
       bcc: "awaledev36@gmail.com",
       replyTo: email,
@@ -35,7 +35,7 @@ export async function POST(req: NextRequest) {
 
     // Send confirmation to the submitter
     await resend.emails.send({
-      from: "Advisync <onboarding@resend.dev>",
+      from: "Advisync <info@advisync.com.au>",
       to: email,
       subject: "Thanks for reaching out — Advisync",
       html: `
