@@ -70,7 +70,7 @@ export default function PrivacyPage() {
               If you have questions about this Privacy Policy or our data practices, please contact us at:
             </p>
             <p className="text-gray-600">
-              Email: privacy@advisync.com.au<br />
+              Email: info@advisync.com.au<br />
               Phone: 0432 405 388<br />
               Address: Melbourne, Victoria, Australia
             </p>

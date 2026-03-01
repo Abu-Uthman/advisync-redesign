@@ -81,7 +81,7 @@ export default function TermsPage() {
               For questions about these Terms of Service, please contact us at:
             </p>
             <p className="text-gray-600">
-              Email: legal@advisync.com.au<br />
+              Email: info@advisync.com.au<br />
               Phone: 0432 405 388<br />
               Address: Melbourne, Victoria, Australia
             </p>

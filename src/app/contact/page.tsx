@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { Mail, Phone, MapPin, Send, Calendar } from "lucide-react";
+import { Mail, Phone, MapPin, Send, Calendar, AlertCircle } from "lucide-react";
 
 export default function ContactPage() {
   const [formData, setFormData] = useState({
@@ -13,16 +13,32 @@ export default function ContactPage() {
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitted, setSubmitted] = useState(false);
+  const [error, setError] = useState("");
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setIsSubmitting(true);
+    setError("");
 
-    // Simulate form submission - replace with actual API call
-    await new Promise((resolve) => setTimeout(resolve, 1000));
+    try {
+      const res = await fetch("/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(formData),
+      });
 
-    setSubmitted(true);
-    setIsSubmitting(false);
+      const data = await res.json();
+
+      if (!res.ok) {
+        throw new Error(data.error || "Something went wrong. Please try again.");
+      }
+
+      setSubmitted(true);
+    } catch (err) {
+      setError(err instanceof Error ? err.message : "Failed to send. Please try again or call us.");
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
@@ -37,8 +53,8 @@ export default function ContactPage() {
           <div className="max-w-3xl">
             <h1 className="text-4xl md:text-5xl font-bold mb-6">Let&apos;s Talk</h1>
             <p className="text-xl text-white/90">
-              Ready to transform your business with AI? Book a free consultation or send us a
-              message. We&apos;ll get back to you within 24 hours.
+              Ready to automate your business with AI voice agents? Book a free consultation or send
+              us a message. We&apos;ll get back to you within 24 hours.
             </p>
           </div>
         </div>
@@ -64,6 +80,13 @@ export default function ContactPage() {
                 </div>
               ) : (
                 <form onSubmit={handleSubmit} className="space-y-6">
+                  {error && (
+                    <div className="flex items-center space-x-2 bg-red-50 text-red-700 p-4 rounded-lg">
+                      <AlertCircle className="w-5 h-5 flex-shrink-0" />
+                      <p className="text-sm">{error}</p>
+                    </div>
+                  )}
+
                   <div className="grid md:grid-cols-2 gap-6">
                     <div>
                       <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-2">
@@ -147,7 +170,7 @@ export default function ContactPage() {
                   <button
                     type="submit"
                     disabled={isSubmitting}
-                    className="w-full btn-primary py-4 flex items-center justify-center space-x-2 disabled:opacity-50"
+                    className="w-full btn-primary py-4 flex items-center justify-center space-x-2 disabled:opacity-50 disabled:cursor-not-allowed"
                   >
                     {isSubmitting ? (
                       <span>Sending...</span>
@@ -168,7 +191,7 @@ export default function ContactPage() {
                 <h2 className="text-2xl font-bold text-primary-500 mb-6">Get in Touch</h2>
                 <p className="text-gray-600 mb-8">
                   Prefer to talk? Book a free consultation call or reach out directly. We&apos;re
-                  here to help.
+                  here to help you automate and grow.
                 </p>
 
                 <div className="space-y-6">
@@ -178,7 +201,7 @@ export default function ContactPage() {
                     </div>
                     <div>
                       <h3 className="font-semibold text-primary-500">Phone</h3>
-                      <a href="tel:0432405388" className="text-gray-600 hover:text-accent-500">
+                      <a href="tel:+61432405388" className="text-gray-600 hover:text-accent-500">
                         0432 405 388
                       </a>
                     </div>
@@ -191,10 +214,10 @@ export default function ContactPage() {
                     <div>
                       <h3 className="font-semibold text-primary-500">Email</h3>
                       <a
-                        href="mailto:hello@advisync.com.au"
+                        href="mailto:info@advisync.com.au"
                         className="text-gray-600 hover:text-accent-500"
                       >
-                        hello@advisync.com.au
+                        info@advisync.com.au
                       </a>
                     </div>
                   </div>
@@ -218,11 +241,11 @@ export default function ContactPage() {
                   <h3 className="text-xl font-bold">Book a Free Consultation</h3>
                 </div>
                 <p className="text-white/90 mb-6">
-                  Schedule a 30-minute call to discuss how AI can help your business. No
-                  obligation, no pressure.
+                  Schedule a 30-minute call to discuss how AI voice agents and automation can help
+                  your business. No obligation, no pressure.
                 </p>
                 <a
-                  href="https://calendly.com/advisync"
+                  href="https://calendly.com/advisync-info/ai-automation-consultation"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center space-x-2 bg-white text-primary-500 px-6 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors"

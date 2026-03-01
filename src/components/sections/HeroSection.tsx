@@ -24,7 +24,7 @@ export function HeroSection() {
           >
             <div className="inline-flex items-center space-x-2 bg-primary-50 text-primary-500 px-4 py-2 rounded-full text-sm font-medium mb-6">
               <Zap className="w-4 h-4 text-accent-500" />
-              <span>Trusted by 50+ Australian Businesses</span>
+              <span>AI-Powered Voice Agents for Australian Business</span>
             </div>
 
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-primary-500 leading-tight mb-6">
@@ -50,16 +50,16 @@ export function HeroSection() {
             {/* Stats */}
             <div className="grid grid-cols-3 gap-6 pt-6 border-t border-gray-200">
               <div>
-                <div className="text-2xl md:text-3xl font-bold text-primary-500">98%</div>
-                <div className="text-sm text-gray-500">Customer Satisfaction</div>
-              </div>
-              <div>
                 <div className="text-2xl md:text-3xl font-bold text-primary-500">24/7</div>
-                <div className="text-sm text-gray-500">AI Availability</div>
+                <div className="text-sm text-gray-500">Always Available</div>
               </div>
               <div>
-                <div className="text-2xl md:text-3xl font-bold text-primary-500">50+</div>
-                <div className="text-sm text-gray-500">Happy Clients</div>
+                <div className="text-2xl md:text-3xl font-bold text-primary-500">0</div>
+                <div className="text-sm text-gray-500">Missed Calls</div>
+              </div>
+              <div>
+                <div className="text-2xl md:text-3xl font-bold text-primary-500">&lt;1min</div>
+                <div className="text-sm text-gray-500">Setup Time</div>
               </div>
             </div>
           </motion.div>

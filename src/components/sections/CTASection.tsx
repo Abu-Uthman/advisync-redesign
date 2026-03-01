@@ -25,7 +25,7 @@ export function CTASection() {
             Ready to Transform Your Business?
           </h2>
           <p className="text-lg md:text-xl text-gray-200 mb-10">
-            Join 50+ Australian businesses already using AI to grow faster. Book your free consultation today and discover how AI can work for you.
+            Ready to stop missing calls and automate your workflows? Book a free consultation and see how AI voice agents and custom automation can work for your business.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
@@ -50,12 +50,12 @@ export function CTASection() {
           <div className="flex flex-col sm:flex-row items-center justify-center gap-6 text-sm text-gray-300">
             <div className="flex items-center space-x-2">
               <Mail className="w-4 h-4" />
-              <span>hello@advisync.com.au</span>
+              <span>info@advisync.com.au</span>
             </div>
             <div className="hidden sm:block w-1 h-1 bg-gray-400 rounded-full" />
             <span>Melbourne, Australia</span>
             <div className="hidden sm:block w-1 h-1 bg-gray-400 rounded-full" />
-            <span>ABN: XX XXX XXX XXX</span>
+            <span>ABN: 64 886 470 398</span>
           </div>
         </motion.div>
       </div>

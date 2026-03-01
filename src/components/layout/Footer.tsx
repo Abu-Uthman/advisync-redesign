@@ -47,13 +47,13 @@ export function Footer() {
               Transform your business with AI. Voice agents, automation, and custom solutions for Australian businesses.
             </p>
             <div className="space-y-3">
-              <a href="tel:+61400000000" className="flex items-center space-x-3 text-gray-300 hover:text-accent-500 transition-colors">
+              <a href="tel:+61432405388" className="flex items-center space-x-3 text-gray-300 hover:text-accent-500 transition-colors">
                 <Phone className="w-5 h-5" />
                 <span>0432 405 388</span>
               </a>
-              <a href="mailto:hello@advisync.com.au" className="flex items-center space-x-3 text-gray-300 hover:text-accent-500 transition-colors">
+              <a href="mailto:info@advisync.com.au" className="flex items-center space-x-3 text-gray-300 hover:text-accent-500 transition-colors">
                 <Mail className="w-5 h-5" />
-                <span>hello@advisync.com.au</span>
+                <span>info@advisync.com.au</span>
               </a>
               <div className="flex items-center space-x-3 text-gray-300">
                 <MapPin className="w-5 h-5" />
