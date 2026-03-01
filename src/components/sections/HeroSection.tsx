@@ -37,7 +37,7 @@ export function HeroSection() {
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 mb-8">
-              <a href="https://calendly.com/advisync-info/ai-automation-consultation" target="_blank" rel="noopener noreferrer" className="btn-primary flex items-center justify-center space-x-2">
+              <a href="https://calendly.com/advisync-info/new-meetingcorewebhub-free-website-consultation" target="_blank" rel="noopener noreferrer" className="btn-primary flex items-center justify-center space-x-2">
                 <span>Book Free Consultation</span>
                 <ArrowRight className="w-5 h-5" />
               </a>

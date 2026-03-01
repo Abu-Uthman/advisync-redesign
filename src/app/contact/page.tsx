@@ -245,7 +245,7 @@ export default function ContactPage() {
                   your business. No obligation, no pressure.
                 </p>
                 <a
-                  href="https://calendly.com/advisync-info/ai-automation-consultation"
+                  href="https://calendly.com/advisync-info/new-meetingcorewebhub-free-website-consultation"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center space-x-2 bg-white text-primary-500 px-6 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors"

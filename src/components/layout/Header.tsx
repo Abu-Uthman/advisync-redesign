@@ -105,7 +105,7 @@ export function Header() {
           {/* CTA Button */}
           <div className="hidden md:flex items-center">
             <a
-              href="https://calendly.com/advisync-info/ai-automation-consultation"
+              href="https://calendly.com/advisync-info/new-meetingcorewebhub-free-website-consultation"
               target="_blank"
               rel="noopener noreferrer"
               className="btn-primary"
@@ -186,7 +186,7 @@ export function Header() {
                 )}
                 <div className="px-4 pt-4">
                   <a
-                    href="https://calendly.com/advisync-info/ai-automation-consultation"
+                    href="https://calendly.com/advisync-info/new-meetingcorewebhub-free-website-consultation"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="btn-primary w-full block text-center"
