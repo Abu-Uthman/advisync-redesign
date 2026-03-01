@@ -18,15 +18,21 @@ const navigation = [
     ],
   },
   { name: "Pricing", href: "/pricing" },
-  { name: "Case Studies", href: "/case-studies" },
-  { name: "About", href: "/about" },
-  { name: "Blog", href: "/blog" },
+  {
+    name: "Company",
+    href: "#",
+    children: [
+      { name: "About Us", href: "/about" },
+      { name: "Case Studies", href: "/case-studies" },
+      { name: "Blog", href: "/blog" },
+    ],
+  },
   { name: "Contact", href: "/contact" },
 ];
 
 export function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-  const [servicesOpen, setServicesOpen] = useState(false);
+  const [openDropdown, setOpenDropdown] = useState<string | null>(null);
 
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-white/90 backdrop-blur-md border-b border-gray-100">
@@ -34,10 +40,10 @@ export function Header() {
         <div className="flex items-center justify-between h-16 md:h-20">
           {/* Logo */}
           <Link href="/" className="flex items-center space-x-2">
-            <Image 
-              src="/logo-icon.svg" 
-              alt="Advisync" 
-              width={40} 
+            <Image
+              src="/logo-icon.svg"
+              alt="Advisync"
+              width={40}
               height={40}
               className="w-10 h-10"
             />
@@ -51,15 +57,20 @@ export function Header() {
                 <div
                   key={item.name}
                   className="relative"
-                  onMouseEnter={() => setServicesOpen(true)}
-                  onMouseLeave={() => setServicesOpen(false)}
+                  onMouseEnter={() => setOpenDropdown(item.name)}
+                  onMouseLeave={() => setOpenDropdown(null)}
                 >
                   <button className="flex items-center space-x-1 text-primary-500 hover:text-accent-500 transition-colors font-medium">
                     <span>{item.name}</span>
-                    <ChevronDown className={cn("w-4 h-4 transition-transform", servicesOpen && "rotate-180")} />
+                    <ChevronDown
+                      className={cn(
+                        "w-4 h-4 transition-transform",
+                        openDropdown === item.name && "rotate-180"
+                      )}
+                    />
                   </button>
                   <AnimatePresence>
-                    {servicesOpen && (
+                    {openDropdown === item.name && (
                       <motion.div
                         initial={{ opacity: 0, y: 10 }}
                         animate={{ opacity: 1, y: 0 }}
@@ -92,8 +103,13 @@ export function Header() {
           </div>
 
           {/* CTA Button */}
-          <div className="hidden md:flex items-center space-x-4">
-            <a href="https://calendly.com/advisync-info/ai-automation-consultation" target="_blank" rel="noopener noreferrer" className="btn-primary">
+          <div className="hidden md:flex items-center">
+            <a
+              href="https://calendly.com/advisync-info/ai-automation-consultation"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn-primary"
+            >
               Book Free Consultation
             </a>
           </div>
@@ -122,14 +138,21 @@ export function Header() {
                   item.children ? (
                     <div key={item.name}>
                       <button
-                        onClick={() => setServicesOpen(!servicesOpen)}
+                        onClick={() =>
+                          setOpenDropdown(openDropdown === item.name ? null : item.name)
+                        }
                         className="flex items-center justify-between w-full px-4 py-2 text-primary-500 font-medium"
                       >
                         <span>{item.name}</span>
-                        <ChevronDown className={cn("w-4 h-4 transition-transform", servicesOpen && "rotate-180")} />
+                        <ChevronDown
+                          className={cn(
+                            "w-4 h-4 transition-transform",
+                            openDropdown === item.name && "rotate-180"
+                          )}
+                        />
                       </button>
                       <AnimatePresence>
-                        {servicesOpen && (
+                        {openDropdown === item.name && (
                           <motion.div
                             initial={{ opacity: 0, height: 0 }}
                             animate={{ opacity: 1, height: "auto" }}
@@ -162,7 +185,12 @@ export function Header() {
                   )
                 )}
                 <div className="px-4 pt-4">
-                  <a href="https://calendly.com/advisync-info/ai-automation-consultation" target="_blank" rel="noopener noreferrer" className="btn-primary w-full block text-center">
+                  <a
+                    href="https://calendly.com/advisync-info/ai-automation-consultation"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="btn-primary w-full block text-center"
+                  >
                     Book Free Consultation
                   </a>
                 </div>

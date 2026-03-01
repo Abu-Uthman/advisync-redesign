@@ -12,19 +12,22 @@ const manrope = Manrope({
 export const metadata: Metadata = {
   metadataBase: new URL("https://advisync.com.au"),
   title: {
-    default: "Advisync AI Solutions | AI Voice Agents & Automation for Australian Businesses",
+    default: "AI Voice Agents & Business Automation Melbourne | Advisync",
     template: "%s | Advisync AI Solutions",
   },
   description:
-    "Transform your business with AI. Advisync provides AI voice agents, automation solutions, and custom AI systems for Australian businesses. Never miss a call again.",
+    "Advisync builds AI voice agents and custom business automation for Australian businesses. Never miss a call — our AI answers 24/7, books appointments, and captures leads. Melbourne-based.",
   keywords: [
+    "AI voice agents Melbourne",
     "AI voice agents Australia",
-    "AI automation",
-    "AI solutions Melbourne",
-    "business automation",
-    "AI voice assistant",
-    "custom AI solutions",
-    "AI for small business",
+    "business automation Melbourne",
+    "AI automation solutions",
+    "custom AI solutions Melbourne",
+    "AI phone answering service",
+    "AI receptionist Australia",
+    "workflow automation",
+    "AI for tradies",
+    "AI for small business Australia",
   ],
   authors: [{ name: "Advisync" }],
   creator: "Advisync",
@@ -39,22 +42,23 @@ export const metadata: Metadata = {
     locale: "en_AU",
     url: "https://advisync.com.au",
     siteName: "Advisync AI Solutions",
-    title: "Advisync AI Solutions | AI Voice Agents & Automation",
+    title: "AI Voice Agents & Business Automation Melbourne | Advisync",
     description:
-      "Transform your business with AI. Voice agents, automation, and custom solutions for Australian businesses.",
+      "AI voice agents that answer calls 24/7, book appointments, and capture leads. Custom automation solutions for Australian businesses.",
     images: [
       {
         url: "/og-image.png",
         width: 1200,
         height: 630,
-        alt: "Advisync AI Solutions",
+        alt: "Advisync — AI Voice Agents & Business Automation Melbourne",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Advisync AI Solutions",
-    description: "AI Voice Agents & Automation for Australian Businesses",
+    title: "AI Voice Agents & Business Automation | Advisync Melbourne",
+    description:
+      "Never miss a call. AI voice agents and workflow automation for Australian businesses.",
     images: ["/og-image.png"],
   },
   robots: {
