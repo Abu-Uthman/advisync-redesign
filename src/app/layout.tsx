@@ -12,13 +12,18 @@ const manrope = Manrope({
 export const metadata: Metadata = {
   metadataBase: new URL("https://advisync.com.au"),
   title: {
-    default: "AI Voice Agents for Melbourne Law Firms, NDIS & Service Businesses | Advisync",
+    default: "Advisync | AI Voice Agents for Law Firms & NDIS Providers Melbourne",
     template: "%s | Advisync AI Solutions",
   },
   description:
-    "Secure, compliant AI receptionists and automation built for Australian law firms, NDIS providers, and local service businesses. 24/7 call answering with natural Australian accents. Melbourne-based.",
+    "Melbourne AI agency building Australian privacy compliant AI voice agents and automation. Legal AI receptionists for law firms, NDIS automation for support coordinators, and 24/7 AI reception for local businesses.",
   keywords: [
     "AI voice agents Melbourne",
+    "Australian privacy compliant AI",
+    "NDIS automation",
+    "Legal AI receptionists",
+    "Melbourne AI agency",
+    "NDIS support coordination automation",
     "AI voice agents Australia",
     "business automation Melbourne",
     "AI automation solutions",
@@ -46,9 +51,9 @@ export const metadata: Metadata = {
     locale: "en_AU",
     url: "https://advisync.com.au",
     siteName: "Advisync AI Solutions",
-    title: "AI Voice Agents for Law Firms, NDIS & Service Businesses | Advisync Melbourne",
+    title: "Advisync | AI Voice Agents for Law Firms & NDIS Providers Melbourne",
     description:
-      "Secure AI receptionists for Australian law firms, NDIS providers, and service businesses. 24/7 call answering with natural Australian accents.",
+      "Melbourne AI agency. Australian privacy compliant AI voice agents for law firms, NDIS automation, and local business reception.",
     images: [
       {
         url: "/og-image.png",
@@ -60,9 +65,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "AI Voice Agents for Law Firms & NDIS Providers | Advisync Melbourne",
+    title: "Advisync | Legal AI Receptionists & NDIS Automation Melbourne",
     description:
-      "Secure AI receptionists for Australian law firms, NDIS providers, and local businesses. Melbourne-based.",
+      "Australian privacy compliant AI voice agents. Legal AI receptionists, NDIS automation, Melbourne AI agency.",
     images: ["/og-image.png"],
   },
   robots: {

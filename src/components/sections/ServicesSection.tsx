@@ -10,7 +10,7 @@ const services = [
     title: "AI Voice Agents",
     description:
       "Never miss a call again. Our AI agents answer calls 24/7, handle inquiries, book appointments, and capture leads naturally.",
-    features: ["24/7 availability", "Natural conversations", "Instant bookings", "Lead capture"],
+    features: ["24/7 availability", "Natural conversations", "Instant bookings", "Lead capture", "Legal client intake \& after-hours triage"],
     href: "/services/ai-voice-agents",
     color: "bg-blue-500",
   },
@@ -19,7 +19,7 @@ const services = [
     title: "AI Automations",
     description:
       "Streamline your workflows with intelligent automation. Connect your apps, reduce manual tasks, and scale your operations.",
-    features: ["Workflow automation", "App integrations", "Smart triggers", "Time savings"],
+    features: ["Workflow automation", "App integrations", "Smart triggers", "Time savings", "NDIS support coordination workflows"],
     href: "/services/ai-automations",
     color: "bg-purple-500",
   },
@@ -28,7 +28,7 @@ const services = [
     title: "Custom AI Solutions",
     description:
       "Bespoke AI systems tailored to your unique business needs. From chatbots to data analysis, we build what you need.",
-    features: ["Custom development", "AI chatbots", "Data analysis", "API integrations"],
+    features: ["Custom development", "AI chatbots", "Data analysis", "API integrations", "Industry-specific compliance builds"],
     href: "/services/custom-ai-solutions",
     color: "bg-accent-500",
   },

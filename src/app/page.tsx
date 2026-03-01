@@ -27,24 +27,23 @@ export default function Home() {
         dangerouslySetInnerHTML={{
           __html: JSON.stringify({
             "@context": "https://schema.org",
-            "@type": "LocalBusiness",
+            "@type": ["LocalBusiness", "ProfessionalService"],
             "@id": "https://advisync.com.au/#business",
             name: "Advisync AI Solutions",
             url: "https://advisync.com.au",
             logo: "https://advisync.com.au/logo.svg",
             image: "https://advisync.com.au/logo.svg",
             description:
-              "Advisync builds secure, compliant AI voice agents and business automation for Australian law firms, NDIS providers, and local service businesses. 24/7 AI receptionists with natural Australian accents, onshore data processing, and enterprise-grade security.",
+              "Melbourne-based AI agency building secure, Australian privacy compliant AI voice agents and workflow automation for law firms, NDIS providers, and local service businesses.",
             telephone: "+61432405388",
             email: "info@advisync.com.au",
             knowsAbout: [
-              "AI Voice Agents",
+              "NDIS Support Coordination Automation",
+              "Legal Tech AI Voice Agents",
+              "Australian Privacy Principles Compliant Data Systems",
+              "Business Process Automation",
               "AI Receptionists for Law Firms",
-              "Legal Tech Automation",
-              "NDIS Business Automation",
               "NDIS Provider AI Solutions",
-              "Business Workflow Automation",
-              "Australian AI Compliance",
               "Conversational AI",
               "After-Hours Call Handling",
             ],
@@ -61,11 +60,8 @@ export default function Home() {
               longitude: 144.9631,
             },
             areaServed: [
+              { "@type": "City", name: "Melbourne", containedInPlace: { "@type": "State", name: "Victoria, Australia" } },
               { "@type": "Country", name: "Australia" },
-              { "@type": "City", name: "Melbourne" },
-              { "@type": "City", name: "Sydney" },
-              { "@type": "City", name: "Brisbane" },
-              { "@type": "City", name: "Perth" },
             ],
             priceRange: "$$",
             openingHoursSpecification: {
@@ -97,9 +93,9 @@ export default function Home() {
                   "@type": "Offer",
                   itemOffered: {
                     "@type": "Service",
-                    name: "AI Voice Agents for Law Firms",
+                    name: "Legal Client Intake AI Voice Agents",
                     description:
-                      "24/7 AI receptionist for legal practices — client intake, appointment scheduling, after-hours triage with Australian compliance.",
+                      "Confidential AI receptionist for law firms — 24/7 client intake, conflict checks, appointment scheduling, and after-hours triage with full Australian privacy compliance.",
                     url: "https://advisync.com.au/services/ai-voice-agents",
                   },
                 },
@@ -107,9 +103,9 @@ export default function Home() {
                   "@type": "Offer",
                   itemOffered: {
                     "@type": "Service",
-                    name: "AI Automation for NDIS Providers",
+                    name: "NDIS Support Coordination Automation",
                     description:
-                      "Automate participant enquiries, intake, scheduling, and plan coordination calls for NDIS service providers.",
+                      "Automate participant enquiries, intake workflows, scheduling, and plan coordination calls for NDIS providers and support coordinators.",
                     url: "https://advisync.com.au/services/ai-automations",
                   },
                 },
@@ -117,9 +113,9 @@ export default function Home() {
                   "@type": "Offer",
                   itemOffered: {
                     "@type": "Service",
-                    name: "AI Receptionists for Local Service Businesses",
+                    name: "24/7 AI Reception for Local Businesses",
                     description:
-                      "Never miss a lead. AI voice agents for tradies, dental clinics, real estate, and professional services across Australia.",
+                      "Never miss a lead. AI voice agents with natural Australian accents for tradies, dental clinics, real estate, and professional services across Melbourne.",
                     url: "https://advisync.com.au/services/custom-ai-solutions",
                   },
                 },
