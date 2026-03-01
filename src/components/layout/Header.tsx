@@ -37,7 +37,7 @@ export function Header() {
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-white/90 backdrop-blur-md border-b border-gray-100">
       <nav className="container-custom" aria-label="Main navigation">
-        <div className="flex items-center justify-between h-16 md:h-20">
+        <div className="flex items-center justify-between h-16 lg:h-20">
           {/* Logo */}
           <Link href="/" className="flex items-center space-x-2">
             <Image
@@ -51,7 +51,7 @@ export function Header() {
           </Link>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center space-x-8">
+          <div className="hidden lg:flex items-center space-x-6">
             {navigation.map((item) =>
               item.children ? (
                 <div
@@ -103,12 +103,12 @@ export function Header() {
           </div>
 
           {/* CTA Button */}
-          <div className="hidden md:flex items-center">
+          <div className="hidden lg:flex items-center">
             <a
               href="https://calendly.com/advisync-info/new-meetingcorewebhub-free-website-consultation"
               target="_blank"
               rel="noopener noreferrer"
-              className="btn-primary"
+              className="btn-primary whitespace-nowrap"
             >
               Book Free Consultation
             </a>
@@ -116,7 +116,7 @@ export function Header() {
 
           {/* Mobile Menu Button */}
           <button
-            className="md:hidden p-2 text-primary-500"
+            className="lg:hidden p-2 text-primary-500"
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
             aria-label="Toggle menu"
           >
@@ -131,7 +131,7 @@ export function Header() {
               initial={{ opacity: 0, height: 0 }}
               animate={{ opacity: 1, height: "auto" }}
               exit={{ opacity: 0, height: 0 }}
-              className="md:hidden border-t border-gray-100"
+              className="lg:hidden border-t border-gray-100"
             >
               <div className="py-4 space-y-2">
                 {navigation.map((item) =>
