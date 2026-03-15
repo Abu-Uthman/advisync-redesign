@@ -30,6 +30,7 @@ export default function Home() {
             "@type": ["LocalBusiness", "ProfessionalService"],
             "@id": "https://advisync.com.au/#business",
             name: "Advisync AI Solutions",
+            alternateName: ["Advisync", "AdviSync", "Advisync AI", "Advisync Melbourne"],
             url: "https://advisync.com.au",
             logo: "https://advisync.com.au/logo.svg",
             image: "https://advisync.com.au/logo.svg",

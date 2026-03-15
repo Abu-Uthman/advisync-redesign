@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     template: "%s | Advisync AI Solutions",
   },
   description:
-    "Melbourne AI agency building Australian privacy compliant AI voice agents and automation. Legal AI receptionists for law firms, NDIS automation for support coordinators, and 24/7 AI reception for local businesses.",
+    "Advisync (AdviSync) is a Melbourne AI agency building Australian privacy compliant AI voice agents and automation. Legal AI receptionists for law firms, NDIS automation for support coordinators, and 24/7 AI reception for local businesses.",
   keywords: [
     "AI voice agents Melbourne",
     "Australian privacy compliant AI",
