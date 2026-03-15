@@ -107,9 +107,22 @@ export function Footer() {
 
         {/* Bottom Bar */}
         <div className="border-t border-primary-400 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
-          <p className="text-gray-300 text-sm">
-            © {new Date().getFullYear()} Advisync AI Solutions. All rights reserved.
-          </p>
+          <div className="flex flex-col items-center md:items-start gap-1">
+            <p className="text-gray-300 text-sm">
+              © {new Date().getFullYear()} Advisync AI Solutions. All rights reserved.
+            </p>
+            <p className="text-gray-500 text-xs">
+              Web Development by{" "}
+              <a
+                href="https://corewebhub.com.au"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-gray-400 hover:text-accent-500 transition-colors"
+              >
+                CoreWebHub
+              </a>
+            </p>
+          </div>
           <div className="flex space-x-6 mt-4 md:mt-0">
             {footerLinks.legal.map((link) => (
               <Link key={link.name} href={link.href} className="text-gray-300 hover:text-accent-500 text-sm transition-colors">
